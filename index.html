@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img scr="Caked By Nicole New Trans.png" alt="Logo">
+        <img src="./Caked By Nicole New Trans.png" alt="Logo">
 
           <h1>Choose your Size</h1>
         
@@ -23,16 +23,25 @@
               <h2>Medium (15-20 servings)</h2>
               <p>Price: $150</p>
               <p>In Stock: Yes</p>
+              <button onclick="removeResource()">Remove</button>
             </li>
             <li>
               <h2>Large (25-30 servings)</h2>
               <p>Price: $180</p>
               <p>In Stock: Yes</p>
+              <button onclick="removeResource()">Remove</button>
             </li>
           </ul>
         
 
 
     </header>
+    <script>
+        function removeResource(button){
+    const resourceItem = button.parentNode;
+    resourceItem.parentNode.removeChild(resourceItem);
+    
+}
+    </script>
 </body>
 </html>
