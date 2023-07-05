@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="./Caked By Nicole New Trans.png" alt="Logo">
+  <header>
+    <img src="./Caked By Nicole New Trans.png" alt="Logo">
+  </header>
 
-          <h1>Choose your Size</h1>
-        
-          <ul>
-            <li>
-              <h2>Small (8-10 servings)</h2>
-              <p>Price: $120</p>
-              <p>In Stock: Yes</p>
-              <button onclick="removeResource()">Remove</button>
-            </li>
-            <li>
-              <h2>Medium (15-20 servings)</h2>
-              <p>Price: $150</p>
-              <p>In Stock: Yes</p>
-              <button onclick="removeResource()">Remove</button>
-            </li>
-            <li>
-              <h2>Large (25-30 servings)</h2>
-              <p>Price: $180</p>
-              <p>In Stock: Yes</p>
-              <button onclick="removeResource()">Remove</button>
-            </li>
-          </ul>
-        
+  <h1>Choose your Size</h1>
 
+  <ul id="resourceList">
+    <li class="removeButton"> 
+      <h2>Small (8-10 servings)</h2>
+      <img src="./small cake.jpeg" alt="Small Cake">
+      <p>Price: $120</p>
+      <p>In Stock: Yes</p>
+      <button onclick="removeButton(event)">Remove</button>
+      <form>
+        <label for="small">In Stock</label>
+        <input type="checkbox" id="small">
+      </form>
+    </li>
+    <li class="removeButton">
+      <h2>Medium (15-20 servings)</h2>
+      <img src="./medium cake.jpeg" alt="Medium Cake">
+      <p>Price: $150</p>
+      <p>In Stock: Yes</p>
+      <button onclick="removeButton(event)">Remove</button>
+    </li>
+    <li class="removeButton">
+      <h2>Large (25-30 servings)</h2>
+      <img src="./large cake.jpeg" alt="Large Cake">
+      <p>Price: $180</p>
+      <p>In Stock: Yes</p>
+      <button onclick="removeButton(event)">Remove</button>
+    </li>
+  </ul>
 
-    </header>
-    <script>
-        function removeResource(button){
-    const resourceItem = button.parentNode;
-    resourceItem.parentNode.removeChild(resourceItem);
-    
-}
-    </script>
+  <script>
+    function removeButton(event) {
+      if (event.target.tagName === 'BUTTON') {
+        const resourceItem = event.target.parentNode;
+        resourceItem.parentNode.removeChild(resourceItem);
+      }
+    }
+  </script>
 </body>
 </html>
