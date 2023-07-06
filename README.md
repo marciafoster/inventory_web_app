@@ -1,8 +1,6 @@
 # Caked By Nicole
-Caked By Nicole is a web application where customers can choose from a selection of freshly baked cakes and add customized messages on top.  This application provides a convenient way for customers to select from cakes we have in stock, add a personalized message on the cake, and place an order for pickup or delivery. 
+Caked By Nicole is a web application where employees of Caked By Nicole can view and update inventory. This application provides a convenient way for employees to see what ready-to-go cakes are in stock, update, add, or remove inventory.
+**Cake Sizes**: Browse through the available cake sizes. View the price of each size.
 
-## Features
-**Cake Selection**: Browse and choose from a variety of cakes we have in stock. Choose your size, color, and flavor. 
-
-**Customized Message**: Submit a personalized message that will be beautifully hand written on top of the cake.
+**Update Inventory**: Add or remove sizes from stock based on availale inventory.
 

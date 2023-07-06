@@ -6,9 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+    header {
+      text-align: center; 
+    }
+
+    .logo {
+      display: block; 
+      margin: 0 auto; 
+    }
+  </style>
 <body>
   <header>
-    <img src="./Caked By Nicole New Trans.png" alt="Logo">
+    
+    <img src="./Caked By Nicole New Trans.png" width="500" height="400" alt="Logo">
   </header>
 
   <h1>Choose your Size</h1>
@@ -16,7 +27,7 @@
   <ul id="resourceList">
     <li class="removeButton"> 
       <h2>Small (8-10 servings)</h2>
-      <img src="./small cake.jpeg" alt="Small Cake">
+      <img src="./small cake.jpeg" width="300" height="300" alt="Small Cake">
       <p>Price: $120</p>
       <p>In Stock: Yes</p>
       <button onclick="removeButton(event)">Remove</button>
@@ -27,17 +38,25 @@
     </li>
     <li class="removeButton">
       <h2>Medium (15-20 servings)</h2>
-      <img src="./medium cake.jpeg" alt="Medium Cake">
+      <img src="./medium cake.jpeg" width="300" height="300" alt="Medium Cake">
       <p>Price: $150</p>
       <p>In Stock: Yes</p>
       <button onclick="removeButton(event)">Remove</button>
+      <form>
+        <label for="medium">In Stock</label>
+        <input type="checkbox" id="medium">
+      </form>
     </li>
     <li class="removeButton">
       <h2>Large (25-30 servings)</h2>
-      <img src="./large cake.jpeg" alt="Large Cake">
+      <img src="./large cake.jpeg" width="300" height="300" alt="Large Cake">
       <p>Price: $180</p>
       <p>In Stock: Yes</p>
       <button onclick="removeButton(event)">Remove</button>
+      <form>
+        <label for="large">In Stock</label>
+        <input type="checkbox" id="large">
+      </form>
     </li>
   </ul>
 
