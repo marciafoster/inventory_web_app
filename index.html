@@ -29,34 +29,52 @@
       <h2>Small (8-10 servings)</h2>
       <img src="./small cake.jpeg" width="300" height="300" alt="Small Cake">
       <p>Price: $120</p>
-      <p>In Stock: Yes</p>
-      <button onclick="removeButton(event)">Remove</button>
       <form>
         <label for="small">In Stock</label>
-        <input type="checkbox" id="small">
+        <label>
+          <input type="radio" name="response" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="response" value="no">
+          No
+        </label>
       </form>
+      <button onclick="removeButton(event)">Remove</button>
     </li>
     <li class="removeButton">
       <h2>Medium (15-20 servings)</h2>
       <img src="./medium cake.jpeg" width="300" height="300" alt="Medium Cake">
       <p>Price: $150</p>
-      <p>In Stock: Yes</p>
-      <button onclick="removeButton(event)">Remove</button>
       <form>
-        <label for="medium">In Stock</label>
-        <input type="checkbox" id="medium">
+        <label for="small">In Stock</label>
+        <label>
+          <input type="radio" name="response" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="response" value="no">
+          No
+        </label>
       </form>
+      <button onclick="removeButton(event)">Remove</button>
     </li>
     <li class="removeButton">
       <h2>Large (25-30 servings)</h2>
       <img src="./large cake.jpeg" width="300" height="300" alt="Large Cake">
       <p>Price: $180</p>
-      <p>In Stock: Yes</p>
-      <button onclick="removeButton(event)">Remove</button>
       <form>
-        <label for="large">In Stock</label>
-        <input type="checkbox" id="large">
+        <label for="small">In Stock</label>
+        <label>
+          <input type="radio" name="response" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="response" value="no">
+          No
+        </label>
       </form>
+      <button onclick="removeButton(event)">Remove</button>
     </li>
   </ul>
 
@@ -68,5 +86,24 @@
       }
     }
   </script>
+<h2>Add to Inventory</h2>
+<form>
+  <li>
+    <label for="size">Size:</label>
+  <input type="text" id="size" name="size" required>
+</li>
+<li>
+  <label for="image">Image URL:</label>
+  <input type="text" id="image" name="image" required>
+</li>
+<li>
+  <label for="price">Price:</label>
+  <input type="text" id="price" name="price" required>
+</li>
+  <li><label for="inStock">In Stock:</label>
+  <input type="checkbox" id="inStock" name="inStock">
+</li>
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>
